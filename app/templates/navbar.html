@@ -1,31 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  </head>
-  <body>
-    <div class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/"> RECIPE SITE </a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                </ul>
-=======
->>>>>>> 405caf1e8702e420cf2f95763d6953bd60649c00
-
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -43,7 +17,6 @@
         <ul class="nav navbar-nav">
           <li><a href="/">Home</a></li>
         </ul>
-
         <ul class="nav navbar-nav navbar-right">
           {% if current_user.is_authenticated %}
           <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
@@ -57,14 +30,11 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form> -->
-
       <form class="form-inline my-2 my-lg-0">
         <input type="text" name="recipe_query" placeholder="Search for a Recipe" class="form-control">
         <input type="submit"  value="Submit" class="btn btn-outline-success">
     </form>
   </div>
 </nav>
-
 </body>
-
 </html>
