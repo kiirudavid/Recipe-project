@@ -1,7 +1,10 @@
 <!-- Displaying movie list macro  -->
 {% macro displayRecipeList(recipe_list) %}
+<!-- <div class="container-fliud" style="background-image: url('https://images.unsplash.com/photo-1502355984-b735cb2550ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');background-repeat: no-repeat; background-size: cover;height: 100vh;"> -->
+
 
     {% for recipe in recipe_list %}
+
         <div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 recipe-card">
             <div class="card-body mt-3">
                 <img src="{{ recipe.image }}" alt="{{ recipe.label }} image_url" class="img-responsive mt-5">

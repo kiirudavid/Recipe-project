@@ -7,11 +7,7 @@ class Config:
     RECIPE_API_KEY = os.environ.get('RECIPE_API_KEY')
     APP_ID = os.environ.get('APP_ID')
     SECRET_KEY = os.environ.get('SECRET_KEY')
-<<<<<<< HEAD
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/recipe'
-=======
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:annblue@localhost/recipe'
->>>>>>> 028578109bd58b3d0ace2e49c5ed0a7d8c4d5d3d
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 
@@ -37,20 +33,12 @@ class ProdConfig(Config):
     pass
 
 class TestConfig(Config):
-<<<<<<< HEAD
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/recipe_test'
 
 
 class DevConfig(Config):
     # SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/recipe'
-=======
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:annblue@localhost/recipe_test'
-
-
-class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:annblue@localhost/recipe'
->>>>>>> 028578109bd58b3d0ace2e49c5ed0a7d8c4d5d3d
     DEBUG = True
 
 config_options = {
