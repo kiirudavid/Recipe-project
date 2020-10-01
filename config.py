@@ -7,7 +7,7 @@ class Config:
     RECIPE_API_KEY = os.environ.get('RECIPE_API_KEY')
     APP_ID = os.environ.get('APP_ID')
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:annblue@localhost/watchlist'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/recipe'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 
@@ -17,8 +17,8 @@ class Config:
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
-    SUBJECT_PREFIX = 'Watchlist'
-    SENDER_EMAIL = 'annaadhiambo01@gmail.com'
+    SUBJECT_PREFIX = 'recipe'
+    SENDER_EMAIL = 'irenekasiva75@gmail.com'
 
     # simple mde  configurations
     SIMPLEMDE_JS_IIFE = True
@@ -33,11 +33,12 @@ class ProdConfig(Config):
     pass
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:annblue@localhost/watchlist_test'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/recipe_test'
 
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:annblue@localhost/watchlist'
+    # SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/recipe'
     DEBUG = True
 
 config_options = {
