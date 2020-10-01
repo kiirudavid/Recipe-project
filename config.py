@@ -3,14 +3,13 @@ import os
 class Config:
 
     RECIPE_API_BASE_URL ='https://api.edamam.com/search?q={}&app_id=${}&app_key=${}'
-    # MOVIE_API_BASE_URL ='https://api.themoviedb.org/3/movie/{}?api_key={}'
     RECIPE_API_KEY = os.environ.get('RECIPE_API_KEY')
     APP_ID = os.environ.get('APP_ID')
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/recipe'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:annblue@localhost/watchlist'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    UPLOADED_PHOTOS_DEST ='app/static/photos'
-    # UPLOADS_DEFAULT_URL = 'http://localhost:5000/'
+    UPLOADED_PHOTOS_DEST = 'app/static/photos'
+    
 
     #  email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -34,12 +33,12 @@ class ProdConfig(Config):
     pass
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/recipe_test'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:annblue@localhost/watchlist_test'
 
 
 class DevConfig(Config):
     # SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/recipe'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:annblue@localhost/watchlist'
     DEBUG = True
 
 config_options = {
