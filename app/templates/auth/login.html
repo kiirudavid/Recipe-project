@@ -6,9 +6,7 @@
 <div class="container-fluid">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <style>
   /* Make the image fully responsive */
   .carousel-inner img {
@@ -17,7 +15,7 @@
   }
   </style>
 
-<div id="demo" class="carousel slide" data-ride="carousel">
+ <div id="demo" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -26,13 +24,13 @@
   </ul>
   <!-- The slideshow -->
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-interval="4000">
       <img src="../static/photos/caro1.jpg" alt="Los Angeles" width="1100" height="500">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-interval="4000">
       <img src="../static/photos/caro2.jpg" alt="Chicago" width="1100" height="500">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-interval="4000">
       <img src="../static/photos/caro3.jpg" alt="New York" width="1100" height="500">
     </div>
   </div>
@@ -43,10 +41,7 @@
   <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
-</div>
-
-
-
+ </div>
 </div>
 <div class="container">
   <div class="row">
@@ -74,6 +69,8 @@
 
   </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 {%endblock%}
