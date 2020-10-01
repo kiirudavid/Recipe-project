@@ -1,7 +1,7 @@
 # Recipe-project
 
  <img src="Capture.PNG">
-####By:
+## By:
 1. Eugene Kiprotich; lead developer
 2. Anna Adhiambo :Assistant designers
 3. Irene Kasiva  :Assistant designers
