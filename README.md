@@ -11,18 +11,7 @@
 5. Jesse kongoi  :Assistant designers
 6. Israel wangila: Assistant designers
 
-## User Stories
-These are the behaviours/features that the application implements for use by a user.
-As a user I would like to:
-*Login
-*Create an account
-*View and Update profile(profile images saved on Cloudinary)
-*View and search recipes (by name, ingredients and number of people served)
-*Filter recipes by country, ratings, ingredients, number of people served and createdDateTime.
-*Create, Update and Delete new recipes
-*Bookmarking/Favoriting recipes
-*Share recipe on social media(facebook, twitter and whatsapp)
-*Sign out
+
 
 ## Description
 The application where you could find the simplest recipes online and also be able to share your recipe to the world. The recipe will include the ingredients, procedure and the number of people served
