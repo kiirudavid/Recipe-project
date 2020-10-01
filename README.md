@@ -2,7 +2,7 @@
 
  <img src="Capture.PNG">
  
-## By:
+## Contributors:
 
 1. Eugene Kiprotich; lead developer
 2. Anna Adhiambo :Assistant designers
