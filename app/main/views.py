@@ -7,12 +7,6 @@ from flask_login import login_required, current_user
 from .. import db,photos
 import markdown2  
 
-
-
-
-
-
-
 # Views
 @main.route('/')
 def index():
