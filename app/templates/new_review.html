@@ -6,13 +6,19 @@
 
         <div class="col-md-8">
 
-            <img src="{{movie.poster}}" alt="{{movie.title}}" class="img-responsive">
+            <img src="{{recipe.poster}}" alt="{{recipe.title}}" class="img-responsive">
         </div>
 
         <div class="col-md-4">
 
             {{ wtf.quick_form(review_form) }}
         </div>
+
+        <div class="col-md-4">
+            {{ wtf.quick_form(review_form) }}
+            {{simplemde.load}}
+        </div>
+
 
     </div>
 

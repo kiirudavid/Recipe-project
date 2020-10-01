@@ -9,5 +9,5 @@ ul
  .movie-card  a:hover
  {
      padding-bottom: 20px;
-      border-bottom: 1px solid green;
+     border-bottom: 1px solid green;
  }
