@@ -1,6 +1,5 @@
 # Recipe-project
 
- <img src="Capture.PNG">
  
 ## Contributors:
 
